@@ -42,6 +42,8 @@ python video_to_png.py [options]
 
 - `-h`, `--help`: Display help information showing all command-line options.
 
+- `-b`, `--batch`: Automatic find all video file and batch process. 
+
 ## Example
 
 To convert a video named `example.mp4` into PNG images, saving every frame, with the background removed, and write them to the `./output_images` directory, you can use the following command:
@@ -63,6 +65,11 @@ If you want to crop images too, you can use this updated command:
 python video_to_png.py -i example.mp4 -o ./output_images -f 10 -c "((345,342),(865,1660))"
 ```
 
+## Example
+To convert all video file in folder "folder" into PNG images
+```
+python video_to_png.py -b y
+```
 
 ## Issues
 
